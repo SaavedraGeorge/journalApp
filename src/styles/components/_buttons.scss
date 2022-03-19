@@ -20,14 +20,18 @@
 .btn_primary{
     background-color: $primary;
     border-radius: 2px;
-
-    &:disabled{
-        background-color: lighten($color: $primary, $amount: 15);
-    }
-
+    
     &:hover{
         background-color: darken($color: $primary, $amount: 15);
     }
+    &:disabled{
+        background-color: lighten($color: $primary, $amount: 15);
+    }
+    &:disabled:hover{
+        background-color: lighten($color: $primary, $amount: 15);
+        cursor: wait;
+    }
+
 
 }
 
